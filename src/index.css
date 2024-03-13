@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *:not(html, body, a) {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;;
+  }
+  #root {
+    max-width: 1600px;
+    margin: auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+  }
+  a {
+    font-family: "Space Mono", monospace;
+  }
+  p {
+    line-height: 25px
+  }
+}
+@layer components {
+  .my-transition {
+    @apply transition-all duration-300;
+  }
+  .btn {
+    @apply bg-yellow my-transition;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Space Mono", monospace;
+    height: 59px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn:hover {
+    @apply border-2 border-yellow text-yellow;
+    background: transparent;
+  }
+
+}
+
+@layer utilities {
+  .heading-1 {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -2.5px;
+  }
+  .heading-2 {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -2.14px;
+  }
+
+  .heading-3 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+  }
+
+  .heading-4 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
+}
+
+a.active {
+  @apply text-yellow;
+}
