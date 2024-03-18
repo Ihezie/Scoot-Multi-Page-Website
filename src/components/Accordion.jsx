@@ -22,6 +22,7 @@ const Accordion = ({ title, data }) => {
         {data.map((item, index) => (
           <AccordionItem
             {...item}
+            key={index}
             questionIndex={index}
             expanded={expanded}
             setExpanded={setExpanded}

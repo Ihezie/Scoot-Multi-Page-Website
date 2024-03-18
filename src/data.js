@@ -15,7 +15,7 @@ import value1 from "./assets/general/value-1.png";
 import value2 from "./assets/general/value-2.png";
 import value3 from "./assets/general/value-3.png";
 
-const navLinks = ["about", "location", "careers"];
+const navLinks = ["about", "careers", "location"];
 
 const userGuide = [
   {
@@ -136,6 +136,39 @@ const accordionData = [
   },
 ];
 
+const jobListings = [
+  {
+    position: "General Manager",
+    country: "Indonesia",
+    region: "Jakarta",
+  },
+  {
+    position: "UI/UX Designer",
+    country: "Japan",
+    region: "Yokohama",
+  },
+  {
+    position: "Blog Content Copywriter",
+    country: "United States",
+    region: "New York",
+  },
+  {
+    position: "Graphic Designer",
+    country: "United States",
+    region: "New York",
+  },
+  {
+    position: "Fleet Supervisor",
+    country: "Indonesia",
+    region: "Jakarta",
+  },
+  {
+    position: "UX Analyst",
+    country: "United Kingdom",
+    region: "London",
+  },
+];
+
 
 export {
   navLinks,
@@ -144,4 +177,5 @@ export {
   productMerits,
   values,
   accordionData,
+  jobListings
 };

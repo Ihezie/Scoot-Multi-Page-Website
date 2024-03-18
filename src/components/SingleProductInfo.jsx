@@ -3,7 +3,7 @@ import { fadeIn } from "../framer-variants";
 import { motion } from "framer-motion";
 import { viewPortOptions } from "../framer-variants";
 
-const SingleProductInfo = ({ image, title, text, showButton }) => {
+const SingleProductInfo = ({ image, title, text, showButton, buttonText="" }) => {
   return (
     <motion.div
       variants={fadeIn}
@@ -42,7 +42,7 @@ const SingleProductInfo = ({ image, title, text, showButton }) => {
         <p className="text-dim-gray">{text}</p>
         {showButton && (
           <button type="button" className="mt-8 btn w-[180px]">
-            Learn More
+            {buttonText}
           </button>
         )}
       </article>

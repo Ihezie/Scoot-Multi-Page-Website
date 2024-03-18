@@ -69,7 +69,7 @@ const Home = () => {
       {/* Product Info */}
       <section className="info-block">
         {productInfo.map((item, index) => (
-          <SingleProductInfo key={index} {...item} showButton={true} />
+          <SingleProductInfo key={index} {...item} showButton={true} buttonText="learn more" />
         ))}
       </section>
     </main>
