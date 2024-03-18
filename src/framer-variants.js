@@ -1,13 +1,15 @@
 export const fadeIn = {
   show: {
-    x: 0,
     opacity: 1,
     transition: {
-      duration: .8,
+      duration: 1,
     },
   },
   hide: {
-    x: "-100%",
     opacity: 0,
   },
+};
+export const viewPortOptions = {
+  once: true,
+  amount: 0.2,
 };

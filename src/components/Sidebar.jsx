@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { navLinks } from "../../data";
+import { navLinks } from "../data";
 
-const Sidebar = () => {
+const Sidebar = ({ setShowSidebar }) => {
   const container = {
     show: {
       x: 0,
@@ -67,6 +67,9 @@ const Sidebar = () => {
         initial="hide"
         animate="show"
         exit="hide"
+        onClick={() => {
+          setShowSidebar(false);
+        }}
         className="z-30 fixed h-screen w-screen top-0 left-0 bg-black/75 md:hidden"
       ></motion.div>
     </>

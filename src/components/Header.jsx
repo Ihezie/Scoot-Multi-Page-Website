@@ -1,6 +1,6 @@
-import logo from "../../assets/icons/scoot.svg";
-import bars from "../../assets/icons/bars.svg";
-import closeIcon from "../../assets/icons/icon-menu-close.svg";
+import logo from "../assets/icons/scoot.svg";
+import bars from "../assets/icons/bars.svg";
+import closeIcon from "../assets/icons/icon-menu-close.svg";
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky top-0 py-6 px-8 flex justify-between bg-white z-50 items-center xl:px-44">
+      <header className="sticky top-0 py-6 px-8 flex justify-between shadow-md bg-white z-50 items-center lg:px-24 xl:px-44 ">
         <div
           className="cursor-pointer md:hidden"
           onClick={() => {
@@ -31,7 +31,9 @@ const Header = () => {
         <span className="md:hidden"></span>
         <Navbar />
       </header>
-      <AnimatePresence>{showSidebar && <Sidebar />}</AnimatePresence>
+      <AnimatePresence>
+        {showSidebar && <Sidebar setShowSidebar={setShowSidebar} />}
+      </AnimatePresence>
     </>
   );
 };

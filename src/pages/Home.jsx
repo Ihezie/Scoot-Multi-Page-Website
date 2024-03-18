@@ -2,24 +2,24 @@ import arrow from "../assets/icons/full-arrow.svg";
 import circleIcons from "../assets/icons/circle-icons.svg";
 import straightLine from "../assets/icons/straight-line.svg";
 import { userGuide, productInfo } from "../data";
-import Steps from "../components/home/Steps";
-import SingleProductInfo from "../components/home/SingleProductInfo";
+import Steps from "../components/Steps";
+import SingleProductInfo from "../components/SingleProductInfo";
 import { fadeIn } from "../framer-variants";
 import { motion } from "framer-motion";
-
-// variants={fadeIn} initial="hide" whileInView="show"
+import { viewPortOptions } from "../framer-variants";
 
 const Home = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-mobile-hero bg-cover sm:bg-tablet-hero lg:bg-desktop-hero">
-        <motion.section
-          variants={fadeIn}
-          initial="hide"
-          whileInView="show"
-          className="h-[95vh] min-h-[650px] text-center px-8 pt-28 relative sm:px-24 sm:pt-32 sm:h-auto sm:pb-52 xl:px-0 xl:text-left xl:pt-40 "
-        >
+      <motion.section
+        variants={fadeIn}
+        initial="hide"
+        whileInView="show"
+        viewport={viewPortOptions}
+        className="bg-mobile-hero bg-cover sm:bg-tablet-hero lg:bg-desktop-hero"
+      >
+        <section className="h-[95vh] min-h-[650px] text-center px-8 pt-28 relative sm:px-24 sm:pt-32 sm:h-auto sm:pb-52 xl:px-0 xl:text-left xl:pt-40 ">
           <h1 className="heading-3 text-white mb-6 sm:heading-1 xl:mb-10 xl:w-[500px] xl:ml-40">
             Scooter sharing made simple
           </h1>
@@ -51,20 +51,25 @@ const Home = () => {
               alt="circle icons"
             />
           </div>
-        </motion.section>
-      </section>
-
+        </section>
+      </motion.section>
       {/* User Guide */}
-      <section className="mt-32 px-8 flex flex-col items-center relative gap-12 sm:items-start sm:px-16 md:px-24 lg:flex-row lg:gap-10 xl:px-44">
-        <div className="hidden absolute bg-light-gray w-4 h-[150%] left-28 -translate-x-1/2 -z-20 bottom-20 sm:block md:left-36 lg:left-0 lg:translate-x-0 lg:h-4 lg:w-[67.6%] lg:top-12 lg:-translate-y-1/2"></div>
+      <section className="pt-32 px-8 flex flex-col items-center relative gap-12 sm:items-start sm:px-16 md:px-24 lg:flex-row lg:pt-0 lg:mt-32 lg:gap-10 xl:px-44">
+        <motion.div
+          variants={fadeIn}
+          viewport={{ ...viewPortOptions, amount: 0.5 }}
+          initial="hide"
+          whileInView="show"
+          className="hidden absolute bg-light-gray w-4 h-[80%] left-28 -translate-x-1/2 -z-20 top-0 sm:block md:left-36 lg:left-0 lg:translate-x-0 lg:h-4 lg:w-[67.6%] lg:top-12 lg:-translate-y-1/2"
+        ></motion.div>
         {userGuide.map((item, index) => (
           <Steps key={index} {...item} />
         ))}
       </section>
       {/* Product Info */}
-      <section className="mt-24 px-8 flex flex-col gap-[170px] md:px-0">
+      <section className="info-block">
         {productInfo.map((item, index) => (
-          <SingleProductInfo key={index} {...item} />
+          <SingleProductInfo key={index} {...item} showButton={true} />
         ))}
       </section>
     </main>

@@ -7,7 +7,7 @@
 @layer base {
   *:not(html, body, a) {
     font-family: "Lexend Deca", sans-serif;
-    font-size: 15px;;
+    font-size: 15px;
   }
   #root {
     max-width: 1600px;
@@ -24,7 +24,7 @@
     font-family: "Space Mono", monospace;
   }
   p {
-    line-height: 25px
+    line-height: 25px;
   }
 }
 @layer components {
@@ -44,7 +44,9 @@
     @apply border-2 border-yellow text-yellow;
     background: transparent;
   }
-
+  .info-block {
+    @apply mt-24 px-8 flex flex-col gap-[120px] md:px-0 lg:gap-40;
+  }
 }
 
 @layer utilities {
@@ -52,6 +54,7 @@
     font-size: 56px;
     line-height: 60px;
     letter-spacing: -2.5px;
+
   }
   .heading-2 {
     font-size: 48px;
