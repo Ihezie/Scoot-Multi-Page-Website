@@ -15,7 +15,7 @@ import value1 from "./assets/general/value-1.png";
 import value2 from "./assets/general/value-2.png";
 import value3 from "./assets/general/value-3.png";
 
-const navLinks = ["about", "careers", "location"];
+const navLinks = ["about", "careers", "locations"];
 
 const userGuide = [
   {
@@ -169,6 +169,7 @@ const jobListings = [
   },
 ];
 
+const locations = ["New York", "London", "Jakarta", "Yokohama"];
 
 export {
   navLinks,
@@ -177,5 +178,6 @@ export {
   productMerits,
   values,
   accordionData,
-  jobListings
+  jobListings,
+  locations,
 };
