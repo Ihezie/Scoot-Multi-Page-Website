@@ -54,7 +54,7 @@ const Home = () => {
         </section>
       </motion.section>
       {/* User Guide */}
-      <section className="pt-32 px-8 flex flex-col items-center relative gap-12 sm:items-start sm:px-16 md:px-24 lg:flex-row lg:pt-0 lg:mt-32 lg:gap-10 xl:px-44">
+      <section className="pt-32 px-8 flex flex-col items-center relative gap-12 sm:items-start sm:px-16 md:px-24 lg:flex-row lg:pt-0 lg:mt-32 lg:gap-10 xl:px-44 xl:mt-40">
         <motion.div
           variants={fadeIn}
           viewport={{ ...viewPortOptions, amount: 0.5 }}
