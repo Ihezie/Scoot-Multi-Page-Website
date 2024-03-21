@@ -54,7 +54,6 @@
     font-size: 56px;
     line-height: 60px;
     letter-spacing: -2.5px;
-
   }
   .heading-2 {
     font-size: 48px;
@@ -72,6 +71,53 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.07px;
+  }
+  .bg-mobile-hero {
+    background-image: url("./assets/home/mobile-hero.jpeg");
+  }
+
+  .bg-tablet-hero {
+    background-image: url("./assets/home/tablet-hero.jpg");
+  }
+
+  .bg-desktop-hero {
+    background-image: url("./assets/home/desktop-hero.jpg");
+  }
+
+  .bg-footer-mobile {
+    background-image: url("./assets/general/bg-footer-mobile.svg");
+  }
+
+  .bg-footer-tablet {
+    background-image: url("./assets/general/bg-footer-tablet.svg");
+  }
+
+  .bg-footer-desktop {
+    background-image: url("./assets/general/bg-footer-desktop.svg");
+  }
+
+  .bg-mobile-banner-one {
+    background-image: url("./assets/general/mobile-banner-1.jpg");
+  }
+
+  .bg-tablet-banner-one {
+    background-image: url("./assets/general/tablet-banner-1.png");
+  }
+
+  .bg-desktop-banner-one {
+    background-image: url("./assets/general/desktop-banner-1.png");
+  }
+
+  .bg-mobile-banner-two {
+    background-image: url("./assets/general/mobile-banner-2.jpg");
+  }
+
+  .bg-tablet-banner-two {
+    background-image: url("./assets/general/tablet-banner-2.png");
+  }
+
+  .bg-desktop-banner-two {
+    background-image: url("./assets/general/desktop-banner-2.png");
   }
 }
 

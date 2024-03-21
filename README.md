@@ -22,8 +22,8 @@ Scoot is a fictional transportation company specializing in scooters. This proje
 
 ### Links
 
-- Website Url - []()
-- Repository Url - []()
+- Website Url - [https://scoot-multi-page-site.netlify.app/](https://scoot-multi-page-site.netlify.app/)
+- Repository Url - [https://github.com/Ihezie/Scoot-Multi-Page-Website.git](https://github.com/Ihezie/Scoot-Multi-Page-Website.git)
 
 ### Author
 - Frontend Mentor - [@Ihezie](https://www.frontendmentor.io/profile/Ihezie)

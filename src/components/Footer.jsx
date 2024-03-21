@@ -71,7 +71,7 @@ const Footer = () => {
             ))}
           </ul>
           <div className="flex gap-6 items-center md:absolute md:right-10 lg:right-24 xl:right-44">
-            <a href="#f">
+            <a href="#">
               <svg
                 width="24"
                 height="24"
