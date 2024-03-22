@@ -18,7 +18,7 @@ Scoot is a fictional transportation company specializing in scooters. This proje
 
 ### Screenshot
 
-![]()
+![screenshot](screenshot.png)
 
 ### Links
 
